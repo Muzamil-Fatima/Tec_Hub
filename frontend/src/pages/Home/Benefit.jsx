@@ -149,18 +149,24 @@ const Benefit = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-2 gap-6 px-4 sm:px-6 lg:px-8 justify-items-center">
       {benefits.map((item, index) => (
         <div
           key={index}
-          className="bg-purple-6 flex flex-col gap-2.5 items-center p-4 w-lg pt-8 px-6 shadow-2xl shadow-gray-300 pb-8 rounded-lg hover:shadow-xl"
+          className="bg-purple-6 flex flex-col gap-2.5 items-center w-full sm:w-80 xl:w-auto pt-5  sm:p-6  shadow-2xl shadow-gray-300 pb-8 rounded-lg hover:shadow-xl"
         >
-          <div className="bg-linear-to-br from-purple-300 via-purple to bg-pink-300 rounded-full w-18 h-18 flex justify-center items-center hover:rotate-45 ">
+          <div
+            className="bg-linear-to-br from-purple-300 via-purple-500 to-pink-300 rounded-full w-14 h-14 sm:w-16 sm:h-16 flex justify-center items-center hover:rotate-12 "
+          >
             {item.icon}
           </div>
           {/* <p>MMMM</p> */}
-          <p className="font-bold text-2xl">{item.title}</p>
-          <p>{item.description}</p>
+          <p className="font-bold text-lg sm:text-xl lg:text-2xl text-center">
+            {item.title}
+          </p>
+          <p className="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+            {item.description}
+          </p>
         </div>
       ))}
     </div>

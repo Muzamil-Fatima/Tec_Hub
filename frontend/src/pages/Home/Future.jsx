@@ -87,25 +87,23 @@ const Future = () => {
   return (
     <div className="bg-linear-to-b from white to-blue-50">
       <div>
-        <h2 className="text-4xl font-bold text-center p-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center p-6 sm:p-10">
           Internship That Transforms Your Future
         </h2>
-        <p className="w-1/2 text-center m-auto">
+        <p className="w-full sm:w-4/5 lg:w-1/2 text-center m-auto leading-relaxed mb-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi
           inventore autem mollitia eaque cum accusamus similique reiciendis,
           nesciunt perferendis in, aut dolorum dolor quis corrupti. Repellat
           delectus dolorum iste?
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-8 items-center m-10 bg-white rounded-lg">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg-grid-cols-3 gap-6 items-center m-4 sm:m-6 lg:m-10 bg-white rounded-lg">
         {field.map((item, index) => (
           <div
             key={index}
-            className="bg-purple-6 flex flex-col gap-2.5 items-center p-4 pt-8 px-6 shadow-2xl shadow-gray-300 pb-8 rounded-lg hover:shadow-xl"
+            className="bg-purple-6 flex flex-col gap-2.5 items-center p-4 sm:p-6 w-full shadow-2xl shadow-gray-300 rounded-lg hover:shadow-xl"
           >
-            <div 
-            className="bg-linear-to-br from-blue-100 via-purple to bg-blue-200 rounded-full w-18 h-18 flex justify-center items-center hover:rotate-45 "
-            >
+            <div className="bg-linear-to-br from-blue-100 via-purple-400 to bg-blue-200 rounded-full w-16 h-16 sm:w-20 sm:h-20 flex justify-center items-center hover:rotate-45 ">
               {item.icon}
             </div>
             <p className="font-bold text-2xl">{item.title}</p>

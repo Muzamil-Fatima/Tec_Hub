@@ -2,18 +2,20 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-900 text-white p-10 space-y-10 font-medium">
+    <div className="bg-gray-900 text-white p-4 sm:px-8 lg-px-16 py-10 space-y-10 font-medium">
       <div className="space-y-2">
-        <h2 className="text-4xl font-extrabold mb-6 ">TecHub</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 ">
+          TecHub
+        </h2>
         <p>Address xyz.</p>
         <p>
           <span>+92 XXXXXXXXXX</span>
         </p>
       </div>
-      <div className="flex-col md:flex-row flex justify-between space-y-6 md:space-y-0 px-10">
+      <div className="grid grid-cols-1 sm:grid-col-2 lg:grid-col-3 gap-8">
         <div className="space-y-2">
           <h3 className="text-white font-semibold text-xl">Quick Link</h3>
-          <ul className="text-gray-500 ">
+          <ul className="text-gray-500 space-y-1">
             <li>Home</li>
             <li>About</li>
             <li>Internship</li>
@@ -47,10 +49,10 @@ const Footer = () => {
         <p className="text-gray-500 ">
           Subscribe to get the latest updates, offers, and news from TecHub.
         </p>
-        <div className="flex space-x-2">
+        <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
           <input
             type="text"
-            className="px-1.5 w-3xs py-2 rounded-xl border-2"
+            className="w-full sm:w-64 px-3 py-2 rounded-xl border-2"
           />
           <button className="bg-blue-700  px-4 py-2  rounded-xl transform transition duration-200 hover:scale-105 ">
             Subscribe
@@ -59,7 +61,7 @@ const Footer = () => {
       </div>
       <div className="space-y-3">
         <p className="text-white font-semibold text-xl">Follow Us</p>
-        <ul className="flex flex-row space-x-3 items-center">
+        <ul className="flex gap-4 items-center">
           <li>
             <a href="">
               <svg
@@ -112,7 +114,7 @@ const Footer = () => {
       </div>
       <hr />
       <div>
-        <p className="text-center">@2025 Muzamil-Fatima. All right reserved</p>
+        <p className="text-center text-sm text-gray-400">© 2025 Muzamil-Fatima. All right reserved</p>
       </div>
     </div>
   );

@@ -7,7 +7,6 @@ const TecHub = () => {
       description:
         "Alias vero  possimus officia, maxime illo fugiat consequatur quia, reiciendis     explicabo pariatur beatae ",
       icon: (
-        
         <svg
           width="32px"
           height="32px"
@@ -117,30 +116,33 @@ const TecHub = () => {
   return (
     <div className="bg-gray-50">
       <div className="mb-20 mt-20 ">
-        <h2 className=" text-4xl font-bold text-center mb-6 p-10">
+        <h2 className=" text-2xl sm:text-3xl md-text-4xl lg:text-5xl font-bold text-center mb-6 p-4 sm:p-10">
           Why Choose{" "}
           <span className="bg-linear-to-r from-indigo-500 via-purple-500 to-blue-700 bg-clip-text text-transparent">
             TecHub?
           </span>{" "}
         </h2>
-        <p className="w-1/2 text-center m-auto">
+        <p className=" text-center m-auto mb-8 px-4 sm:px-6 md:px-0 max-w-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero
           possimus officia, maxime illo fugiat consequatur quia, reiciendis
           explicabo pariatur beatae omnis quos, asperiores dolorum deleniti enim
           soluta excepturi officiis?
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-4 m-6 bg-white rounded-lg">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-col-4 gap-4 m-6 bg-white rounded-lg">
         {tec.map((item, index) => (
           <div
             key={index}
-          
             className="bg-purple-6 flex flex-col gap-2.5 items-center p-4 pt-8 px-6 shadow-2xl shadow-gray-300 pb-8 rounded-lg hover:shadow-xl"
           >
             <div>{item.icon}</div>
             {/* <p>MMMM</p> */}
-            <p className="font-bold text-2xl">{item.title}</p>
-            <p>{item.description}</p>
+            <p className="font-bold text-xl sm:text-2xl md:text-2xl">
+              {item.title}
+            </p>
+            <p className="text-sm sm:text-base md:text-base text-center">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>
