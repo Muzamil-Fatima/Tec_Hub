@@ -40,12 +40,12 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-50">
+    <div className="p-20 flex justify-center items-center min-h-screen bg-gray-50 px-4">
       <form
-        className="bg-white p-10 rounded-2xl shadow-lg w-96 space-y-6"
+        className="bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-lg w-full space-y-6 max-w-sm sm:max-w-md lg:max-w-lg"
         onSubmit={handleLogin}
       >
-        <h2 className="text-3xl font-bold text-center">
+        <h2 className="text-2xl  sm:text-3xl font-bold text-center">
           Login to{" "}
           <span className="bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
             TecHub
@@ -54,7 +54,7 @@ const Login = () => {
         <input
           type="email"
           placeholder="Email"
-          className="w-full p-3 rounded-xl border border-gray-300 focus:border-purple-500 focus:outline-none"
+          className="w-full p-3 sm:p-4 rounded-xl border border-gray-300 focus:border-purple-500 focus:outline-none"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -62,7 +62,7 @@ const Login = () => {
         <input
           type="password"
           placeholder="Password"
-          className="w-full p-3 rounded-xl border border-gray-300 focus:border-purple-500 focus:outline-none"
+          className="w-full p-3 sm:p-4 rounded-xl border border-gray-300 focus:border-purple-500 focus:outline-none"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
@@ -76,7 +76,7 @@ const Login = () => {
             Click here
           </Link>
         </p>
-        <p className="text-sm text-center text-gray-500">
+        <p className="text-xs sm:text-sm text-center text-gray-500">
           Don't have an account?{" "}
           <Link to="/signup" className="text-purple-500 underline">
             Sign Up
@@ -92,7 +92,7 @@ const Login = () => {
         <button
           onClick={() => window.open(`${BASE_URL}/api/auth/google`, "_self")}
           type="button"
-          className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 rounded-xl font-semibold hover:bg-gray-50"
+          className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 sm:py-4  rounded-xl font-semibold hover:bg-gray-50"
         >
           <FcGoogle size={22} />
           Continue with Google
