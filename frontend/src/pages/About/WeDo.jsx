@@ -53,18 +53,23 @@ const WeDo = () => {
   ];
   return (
     <div>
-      <h7 className="text-4xl font-bold mb-3 text-center flex justify-center mt-16"> What We DO</h7>
-      <div className="grid grid-cols-3 gap-8 items-center m-10 bg-white rounded-lg">
+      <h7 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center flex mt-12">
+        {" "}
+        What We DO
+      </h7>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 sm:m-10 bg-white rounded-lg">
         {imp.map((item, index) => (
           <div
             key={index}
-            className="bg-purple-6 flex flex-col gap-2.5 items-center p-4 pt-8 px-6 shadow-2xl shadow-gray-300 pb-8 rounded-lg hover:shadow-xl"
+            className="bg-purple-100 flex flex-col gap-2.5 items-center p-4 sm:p-6 shadow-2xl shadow-gray-300 rounded-lg hover:shadow-xl"
           >
-            <div className="bg-linear-to-br from-blue-100 via-purple to bg-blue-200 rounded-full w-18 h-18 flex justify-center items-center hover:rotate-45 ">
+            <div className="bg-linear-to-br from-blue-100 via-purple-200 to bg-blue-200 rounded-full w-16 h-16 sm:w-20 sm:h-20 flex justify-center items-center hover:rotate-45 ">
               {item.icon}
             </div>
-            <p className="font-bold text-2xl">{item.title}</p>
-            <p>{item.description}</p>
+            <p className="font-bold text-lg sm:text-xl">{item.title}</p>
+            <p className="text-sm sm:text-base text-center">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>
