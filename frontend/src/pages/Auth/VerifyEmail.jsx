@@ -76,12 +76,14 @@ const VerifyEmail = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-50">
+    <div className="flex justify-center items-center min-h-screen py-6 bg-gray-50">
       <form
-        className="bg-white p-10 rounded-2xl shadow-lg w-96 space-y-6"
+        className="bg-white p-8 sm:p-10 rounded-2xl shadow-lg w-11/12 max-w-md space-y-6"
         onSubmit={handleVerify}
       >
-        <h2 className="text-3xl font-bold text-center">Verify Email</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-center">
+          Verify Email
+        </h2>
         <p className="text-center text-gray-500">
           Enter the OTP sent to your email
         </p>
@@ -93,7 +95,7 @@ const VerifyEmail = () => {
                 value={digit}
                 type="text"
                 placeholder="X"
-                className="w-12 h-12 border-2   p-0 text-center font-bold text-2xl rounded-xl border-gray-300 focus:border-purple-500 focus:outline-none"
+                className="w-10 h-10 sm:w-12 sm:h-12 border-2   p-0 text-center font-bold text-xl sm:text-2xl rounded-xl border-gray-300 focus:border-purple-500 focus:outline-none"
                 required
                 ref={(el) => (inputRef.current[index] = el)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
@@ -106,14 +108,14 @@ const VerifyEmail = () => {
 
         <button
           type="submit"
-          className="w-full bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 text-white py-3 rounded-xl font-semibold hover:opacity-90"
+          className="w-full bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 text-white py-3 rounded-xl font-semibold hover:opacity-90 text-sm sm:text-base"
         >
           Verify
         </button>
         <p className="text-sm text-center text-gray-500 mt-3">
           Didn't receive token?{" "}
           <button
-          type="button"
+            type="button"
             onClick={handleResend}
             className="text-purple-500 underline cursor-pointer"
           >

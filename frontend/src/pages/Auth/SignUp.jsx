@@ -35,12 +35,12 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-50">
+    <div className="flex justify-center items-center min-h-screen py-6 bg-gray-50">
       <form
-        className="bg-white p-10 rounded-2xl shadow-lg w-96 space-y-6"
+        className="bg-white p-8 sm:p-10 rounded-2xl shadow-lg w-11/12 max-w-md space-y-6"
         onSubmit={handleSignup}
       >
-        <h2 className="text-3xl font-bold text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center">
           Sign Up for{" "}
           <span className="bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
             TecHub
@@ -78,7 +78,7 @@ const Signup = () => {
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
         />
-        <button className="w-full bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 text-white py-3 rounded-xl font-semibold hover:opacity-90">
+        <button className="w-full sm:text-lg bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 text-white py-3 rounded-xl font-semibold hover:opacity-90">
           Sign Up
         </button>
         <p className="text-sm text-center text-gray-500">
