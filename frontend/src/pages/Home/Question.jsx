@@ -8,49 +8,49 @@ const Question = () => {
   };
   const dropDown = [
     {
-      question: "What services does TecHub provide?",
+      question: "What services does MuzamilHub provide?",
       answer:
-        "TecHub offers internship programs, software development services, career guidance, and upcoming professional tech courses.",
+        "MuzamilHub offers internship programs, software development services, career guidance, and upcoming professional tech courses.",
     },
     {
-      question: "How do I apply for an internship at TecHub?",
+      question: "How do I apply for an internship at MuzamilHub?",
       answer:
-        "You can apply directly through the TecHub website by filling out the internship application form. Our team will contact you if you’re shortlisted.",
+        "You can apply directly through the MuzamilHub website by filling out the internship application form. Our team will contact you if you’re shortlisted.",
     },
     {
-      question: "Are TecHub internships paid or unpaid?",
+      question: "Are MuzamilHub internships paid or unpaid?",
       answer:
-        "TecHub offers both paid and unpaid internships depending on the program, duration, and skill level of the applicant.",
+        "MuzamilHub offers both paid and unpaid internships depending on the program, duration, and skill level of the applicant.",
     },
     {
-      question: "Do I need prior experience to join TecHub?",
+      question: "Do I need prior experience to join MuzamilHub?",
       answer:
         "No prior experience is required for beginner-friendly programs. However, some advanced tracks may require basic programming knowledge.",
     },
     {
-      question: "What technologies does TecHub focus on?",
+      question: "What technologies does MuzamilHub focus on?",
       answer:
-        "TecHub focuses on MERN Stack, Python, Data Science, UI/UX, mobile app development, cloud technologies, and more.",
+        "MuzamilHub focuses on MERN Stack, Python, Data Science, UI/UX, mobile app development, cloud technologies, and more.",
     },
     {
       question: "Will I receive a certificate after completing an internship?",
       answer:
-        "Yes. TecHub provides an officially verified certificate after successfully completing the internship requirements.",
+        "Yes. MuzamilHub provides an officially verified certificate after successfully completing the internship requirements.",
     },
     {
-      question: "Does TecHub offer remote learning options?",
+      question: "Does MuzamilHub offer remote learning options?",
       answer:
-        "Yes. TecHub provides online training, remote internships, and virtual mentoring opportunities for learners worldwide.",
+        "Yes. MuzamilHub provides online training, remote internships, and virtual mentoring opportunities for learners worldwide.",
     },
     {
-      question: "How long are the internship programs at TecHub?",
+      question: "How long are the internship programs at MuzamilHub?",
       answer:
         "Internship duration varies from 4 to 12 weeks depending on the track and learning goals.",
     },
     {
-      question: "Does TecHub help with job placement?",
+      question: "Does MuzamilHub help with job placement?",
       answer:
-        "Yes. TecHub assists students with resume building, LinkedIn optimization, mock interviews, and job recommendations.",
+        "Yes. MuzamilHub assists students with resume building, LinkedIn optimization, mock interviews, and job recommendations.",
     },
   ];
 

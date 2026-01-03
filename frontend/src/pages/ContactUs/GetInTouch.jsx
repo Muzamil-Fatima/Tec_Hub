@@ -18,7 +18,7 @@ const GetInTouch = () => {
           />
         </svg>
       ),
-      description: "tecHub@gmail.com",
+      description: "MuzamilHub@gmail.com",
     },
     {
       title: "Phone",

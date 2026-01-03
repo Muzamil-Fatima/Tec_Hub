@@ -43,7 +43,7 @@ const Signup = () => {
         <h2 className="text-2xl sm:text-3xl font-bold text-center">
           Sign Up for{" "}
           <span className="bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-            TecHub
+            MuzamilHub
           </span>
         </h2>
         <input
