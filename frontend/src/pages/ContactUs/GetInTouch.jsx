@@ -66,19 +66,20 @@ const GetInTouch = () => {
   ];
   return (
     <div>
-      <h3 className="text-4xl font-bold mb-3 text-center flex justify-center mt-16">
-        Contact <span className="text-blue-700 ml-2"> Information</span>{" "}
+      <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-center flex justify-center mt-12 sm:mt-16">
+        Contact{" "}
+        <span className="text-blue-700 ml-1 sm:ml-2 "> Information</span>{" "}
       </h3>
-      <div className="grid grid-cols-3 gap-8 items-center m-10 bg-white rounded-lg">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 m-4 sm:m-6 md:m-10 items-center  bg-white rounded-lg">
         {information.map((item, index) => (
           <div
             key={index}
-            className="bg-purple-6 flex flex-col gap-2.5 items-center p-4 pt-8 px-6 shadow-2xl shadow-gray-300 pb-8 rounded-lg hover:shadow-xl"
+            className="bg-purple-6 flex flex-col gap-2 items-center p-4 sm:p-6 pt-8  sm:pt-8 px-6 shadow-2xl shadow-gray-300 pb-8 rounded-lg hover:shadow-xl"
           >
-            <div className="bg-linear-to-br from-blue-100 via-purple to bg-blue-200 rounded-full w-18 h-18 flex justify-center items-center hover:rotate-45 ">
+            <div className="bg-linear-to-br from-blue-100 via-purple to bg-blue-200 rounded-full w-16 h-16 sm:w-20 sm:h-20 flex justify-center items-center hover:rotate-45 ">
               {item.icon}
             </div>
-            <p className="font-bold text-xl">{item.title}</p>
+            <p className="text-sm sm:text-base md:text-lg">{item.title}</p>
             <p>{item.description}</p>
           </div>
         ))}
