@@ -114,7 +114,7 @@ const Footer = () => {
       </div>
       <hr />
       <div>
-        <p className="text-center text-sm text-gray-400">© 2025 Muzamil-Fatima. All right reserved</p>
+        <p className="text-center text-sm text-gray-400">© 2025-26 Muzamil-Fatima. All right reserved</p>
       </div>
     </div>
   );
