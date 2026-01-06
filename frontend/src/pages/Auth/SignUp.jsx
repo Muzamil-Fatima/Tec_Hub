@@ -1,24 +1,21 @@
-<<<<<<< HEAD
+
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-=======
->>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { BASE_URL } from "../../Utils/api.js";
 import axios from "axios";
+
 const Signup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-<<<<<<< HEAD
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-=======
->>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
 
   const navigate = useNavigate();
+
   const handleSignup = async (e) => {
     e.preventDefault();
     if (!name || !email || !password || !confirmPassword)
@@ -27,6 +24,7 @@ const Signup = () => {
       return toast.error("Password must be at least 6 characters Long");
     if (password !== confirmPassword)
       return toast.error("Passwords do not match!");
+
     try {
       const res = await axios.post(`${BASE_URL}/api/auth/`, {
         name,
@@ -49,27 +47,17 @@ const Signup = () => {
         className="bg-white p-8 sm:p-10 rounded-2xl shadow-lg w-11/12 max-w-md space-y-6"
         onSubmit={handleSignup}
       >
-        <h2 className="text-2xl sm:text-3xl font-bold text-center">
-<<<<<<< HEAD
-          Sign Up{" "}
-          {/* <span className="bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-            TecHub
-          </span> */}
-=======
-          Sign Up for{" "}
-          <span className="bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-            MuzamilHub
-          </span>
->>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
-        </h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-center">Sign Up</h2>
+
         <input
           type="text"
-          placeholder="name"
+          placeholder="Name"
           className="w-full p-3 rounded-xl border border-gray-300 focus:border-purple-500 focus:outline-none"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
         />
+
         <input
           type="email"
           placeholder="Email"
@@ -78,7 +66,7 @@ const Signup = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-<<<<<<< HEAD
+
         <div className="relative">
           <input
             type={showPassword ? "text" : "password"}
@@ -88,18 +76,18 @@ const Signup = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-
           <span
             className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-gray-500 hover:text-purple-500 transition"
             onClick={() => setShowPassword(!showPassword)}
           >
             {showPassword ? (
-              <FaEye className="text-lg sm:text-xl" />
-            ) : (
               <FaEyeSlash className="text-lg sm:text-xl" />
+            ) : (
+              <FaEye className="text-lg sm:text-xl" />
             )}
           </span>
         </div>
+
         <div className="relative">
           <input
             type={showConfirmPassword ? "text" : "password"}
@@ -114,34 +102,17 @@ const Signup = () => {
             onClick={() => setShowConfirmPassword(!showConfirmPassword)}
           >
             {showConfirmPassword ? (
-              <FaEye className="text-lg sm:text-xl" />
-            ) : (
               <FaEyeSlash className="text-lg sm:text-xl" />
+            ) : (
+              <FaEye className="text-lg sm:text-xl" />
             )}
           </span>
         </div>
 
-=======
-        <input
-          type="password"
-          placeholder="Password"
-          className="w-full p-3 rounded-xl border border-gray-300 focus:border-purple-500 focus:outline-none"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          className="w-full p-3 rounded-xl border border-gray-300 focus:border-purple-500 focus:outline-none"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          required
-        />
->>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
         <button className="w-full sm:text-lg bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 text-white py-3 rounded-xl font-semibold hover:opacity-90">
           Sign Up
         </button>
+
         <p className="text-sm text-center text-gray-500">
           Already have an account?{" "}
           <Link to="/login" className="text-purple-500 underline">
