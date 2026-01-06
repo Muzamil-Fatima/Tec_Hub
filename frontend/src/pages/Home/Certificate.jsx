@@ -4,7 +4,11 @@ const Certificate = () => {
   return (
     <div className="flex justify-center flex-col items-center mx-4 sm:mx-10 lg:mx-20">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-12 mb-10 text-center">
+<<<<<<< HEAD
         Recognized Certification from TecHub
+=======
+        Recognized Certification from MuzamilHub
+>>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
       </h2>
       <p className="w-full sm:w-4/5 lg:w-3/5 text-center sm:text-left mb-4 leading-relaxed">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quae,

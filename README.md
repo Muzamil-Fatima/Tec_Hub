@@ -132,6 +132,12 @@ http://localhost:5173
 
 ## 👤 Author
 
+<<<<<<< HEAD
 **codixStack**
 MERN Stack Developer
 📌 Passionate about building real-world web applications
+=======
+**Muzamil**
+Computer Science Student & MERN Stack Developer
+📌 Passionate about building real-world web applications
+>>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56

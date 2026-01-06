@@ -5,7 +5,11 @@ const Footer = () => {
     <div className="bg-gray-900 text-white p-4 sm:px-8 lg-px-16 py-10 space-y-10 font-medium">
       <div className="space-y-2">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 ">
+<<<<<<< HEAD
           TecHub
+=======
+          MuzamilHub
+>>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
         </h2>
         <p>Address xyz.</p>
         <p>
@@ -47,7 +51,11 @@ const Footer = () => {
       <div className="space-y-3">
         <h6 className="text-white font-semibold text-xl">NewsLetter</h6>
         <p className="text-gray-500 ">
+<<<<<<< HEAD
           Subscribe to get the latest updates, offers, and news from TecHub.
+=======
+          Subscribe to get the latest updates, offers, and news from MuzamilHub.
+>>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
           <input
@@ -114,7 +122,11 @@ const Footer = () => {
       </div>
       <hr />
       <div>
+<<<<<<< HEAD
         <p className="text-center text-sm text-gray-400">© 2025-26 TecHub. All right reserved</p>
+=======
+        <p className="text-center text-sm text-gray-400">© 2025-26 Muzamil-Fatima. All right reserved</p>
+>>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
       </div>
     </div>
   );

@@ -1,15 +1,25 @@
+<<<<<<< HEAD
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+=======
+>>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "../../Utils/api.js";
+<<<<<<< HEAD
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+=======
+import { FcGoogle } from "react-icons/fc";
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+>>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
 
   const navigate = useNavigate();
 
@@ -50,7 +60,11 @@ const Login = () => {
         <h2 className="text-2xl  sm:text-3xl font-bold text-center">
           Login to{" "}
           <span className="bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+<<<<<<< HEAD
             TecHub
+=======
+            MuzamilHub
+>>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
           </span>
         </h2>
         <input
@@ -61,6 +75,7 @@ const Login = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+<<<<<<< HEAD
         <div className="relative">
           <input
             type={showPassword ? "text" : "password"}
@@ -82,6 +97,16 @@ const Login = () => {
             )}
           </span>
         </div>
+=======
+        <input
+          type="password"
+          placeholder="Password"
+          className="w-full p-3 sm:p-4 rounded-xl border border-gray-300 focus:border-purple-500 focus:outline-none"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+>>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
         <button className="w-full bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 text-white py-3 rounded-xl font-semibold hover:opacity-90">
           Login
         </button>
