@@ -12,7 +12,7 @@ const Footer = () => {
           <span>+92 XXXXXXXXXX</span>
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-col-2 lg:grid-col-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="space-y-2">
           <h3 className="text-white font-semibold text-xl">Quick Link</h3>
           <ul className="text-gray-500 space-y-1">
