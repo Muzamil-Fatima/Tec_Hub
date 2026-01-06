@@ -30,12 +30,8 @@ const VerifyEmail = () => {
     }
   };
   // VerifyEmail.js
-<<<<<<< HEAD
   const handleVerify = async (e) => {
     e.preventDefault();
-=======
-  const handleVerify = async () => {
->>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
     const code = otp.join("");
     if (code.length !== 6) {
       toast.error("Please enter a 6 digit code");

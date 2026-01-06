@@ -7,11 +7,7 @@ const About = () => {
         <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 lg:mb-6">
           About{" "}
           <span className="bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent ">
-<<<<<<< HEAD
             TecHub
-=======
-            MuzamilHub
->>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
           </span>
         </h2>
         <p className="text-gray-600 leading-relaxed text-sm sm:text-base lg:text-lg mb-6">

@@ -7,11 +7,7 @@ const Header = () => {
         <h2 className="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center px-4 sm:px-6">
           Empowering Future with{" "}
           <span className="bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-<<<<<<< HEAD
             TecHub
-=======
-            MuzamilHub
->>>>>>> cc65fcec34579783f7610b01d8b0e755330a2a56
           </span>{" "}
         </h2>
         <div>
