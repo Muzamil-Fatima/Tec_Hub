@@ -1,4 +1,3 @@
-
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
@@ -81,9 +80,9 @@ const Signup = () => {
             onClick={() => setShowPassword(!showPassword)}
           >
             {showPassword ? (
-              <FaEyeSlash className="text-lg sm:text-xl" />
-            ) : (
               <FaEye className="text-lg sm:text-xl" />
+            ) : (
+              <FaEyeSlash className="text-lg sm:text-xl" />
             )}
           </span>
         </div>
@@ -102,9 +101,9 @@ const Signup = () => {
             onClick={() => setShowConfirmPassword(!showConfirmPassword)}
           >
             {showConfirmPassword ? (
-              <FaEyeSlash className="text-lg sm:text-xl" />
-            ) : (
               <FaEye className="text-lg sm:text-xl" />
+            ) : (
+              <FaEyeSlash className="text-lg sm:text-xl" />
             )}
           </span>
         </div>
